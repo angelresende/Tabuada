@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    
+    <section>        
+        <div id="tabuada">
+            <form>
+                <label for="numberTab">
+                    Informe o número:
+                    <input type="number" name="numberTab" id="txtNumberTab">
+                </label>
+            </form> 
+        </div>      
+        
+        <div>
+            <input type="button" class="button" onclick="gerarTabuada()" value="Gerar tabuada">
+            <input type="button" class="buttonClear" onclick="limparDados()" value="Limpar dados">
+        </div>
+
+        <div id="gerarTabuada" style="text-align: center;">
+            <select name="tabuada" id="selTab" size='10'>
+            </select>
+        </div>
+        
+        <div id="answer" style="text-align: center;">
+            Digite o número para obter a tabuada...
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy;CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
